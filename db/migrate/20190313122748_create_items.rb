@@ -2,8 +2,8 @@ class CreateItems < ActiveRecord::Migration[5.2]
   def change
     create_table :items do |t|
       t.string :name
-      t.integer :latitude
-      t.integer :longitude
+      t.float :latitude
+      t.float :longitude
       t.references :user, foreign_key: true
 
       t.timestamps

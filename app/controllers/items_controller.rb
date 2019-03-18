@@ -10,7 +10,7 @@ class ItemsController < ApplicationController
     end 
 
     def create
-        @item = Item.new(name: params[:name], latitude:params[:latitude], longitude:params[:longitude], user_id:params[:user_id])
+        @item = Item.new(image: params[:image], name: params[:name], latitude:params[:latitude], longitude:params[:longitude], user_id:params[:user_id])
         if @item.save
           render json: @item
         else
