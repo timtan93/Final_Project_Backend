@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   post 'signin', to: 'users#signin'
   get 'validate', to: 'users#validate'
   get 'items', to: 'users#get_items'
+  post 'items', to: 'items#create'
 end
