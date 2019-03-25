@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 users = User.create([
-    {first_name: 'Ada', second_name: 'Lovelace', email: 'Ada@gmail.com', password: 'ada'},
-    {first_name: 'Satoshi', second_name: 'Nakamoto', email: 'Satoshi@gmail.com', password: 'satoshi'}, 
-    {first_name: 'Alan', second_name: 'Turing', email: 'alan@gmail.com', password: 'alan'}, 
-    {first_name: 'Linus', second_name: 'Torvalds', email: 'linus@gmail.com', password: 'linus'}])
+    {first_name: 'Ada', second_name: 'Lovelace', email: 'ada', password: 'ada'},
+    {first_name: 'Satoshi', second_name: 'Nakamoto', email: 'satoshi', password: 'satoshi'}, 
+    {first_name: 'Alan', second_name: 'Turing', email: 'alan', password: 'alan'}, 
+    {first_name: 'Linus', second_name: 'Torvalds', email: 'linus', password: 'linus'}])
     
 items = Item.create([
     {name:"Bag" ,latitude:51.562340 ,longitude:-0.074790 ,user_id: 1,image:"https://s3.eu-west-2.amazonaws.com/mod5-recycle/Dummy+Images/Bag/5114477740001_5306679295001_5306656301001-vs.jpg"},
