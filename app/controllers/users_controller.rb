@@ -18,7 +18,7 @@ class UsersController < ApplicationController
       if @user 
         render json: {email: @user.email, token: issue_token({id: @user.id})}
       else 
-        render json: {error: "Email/password combination invalid."}, status: 401
+        render json: {error: "Email/password combination invalid"}, status: 401
       end 
     end 
 
@@ -37,11 +37,11 @@ class UsersController < ApplicationController
     end 
 
     def create
-        @user = User.new(first_name: params[:first_name], second_name:params[:second_name], email:params[:email])
+        @user = User.new(first_name: params[:first_name], second_name:params[:second_name], email:params[:email], password:params[:password])
         if @user.save
           render json: @user
         else
-          render json: {error: 'Unable to create user.'}, status: 400
+          render json: {error: 'Sorry this email address is already in use'}, status: 400
         end
       end
     

@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'items', to: 'users#get_items'
   post 'items', to: 'items#create'
   get 'allitems', to: 'items#index'
+  post 'signup', to: 'users#create'
 end
